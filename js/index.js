@@ -58,21 +58,22 @@ navItems[3].innerText=siteContent['nav']['nav-item-4']
 navItems[4].innerText=siteContent['nav']['nav-item-5']
 
 
-const newATag1 = document.createElement('a')
+const nav1 = document.createElement('a')
 const mainNav = document.querySelector('nav')
-newATag1.innerText = 'Reviews'
-newATag1.href = '#'
-mainNav.prepend(newATag1)
-newATag1.style.color = 'green'
+
+nav1.innerText = 'Read'
+nav1.href = '#'
+mainNav.prepend(nav1)
+nav1.style.color = 'green'
 
 
 
- const newATag2 = document.createElement('a')
+ const nav2 = document.createElement('a')
 const mainNav2 = document.querySelector('nav')
-newATag2.innerText = 'Info'
-newATag2.href = '#'
-mainNav2.append(newATag2)
-newATag2.style.color = 'green'
+nav2.innerText = 'Pictures'
+nav2.href = '#'
+mainNav2.append(nav2)
+nav2.style.color = 'green'
 
 
 // CTA////////////
@@ -80,8 +81,23 @@ newATag2.style.color = 'green'
 let ctaHead = document.querySelector('h1');
 ctaHead.innerText = siteContent['cta']['h1']
 
+let center = document.querySelector('.cta-text');
+center.style.textAlign='center'
+center.style.justifyContent='flex-start'
+center.style.alignItems='center'
+
+
+
+const title = document.querySelector('.cta-text h1');
+title.textContent = 'Dom \n Is \n Awesome';
+title.style.textAlign='center'
+title.style.width = '100px';
+title.style.marginRight = '200px'
+
+
 let ctaButton = document.querySelector('button');
 ctaButton.textContent = siteContent['cta']['button']
+
 
 // //Main////////////////
 
